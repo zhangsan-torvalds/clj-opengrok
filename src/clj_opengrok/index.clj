@@ -26,7 +26,7 @@
         src-root (:src-root opts)
         project (when (:project opts) "-P")
         ignore (when (:ignore opts)
-                 (interleave (repeat "-i") (split (:ignore opts) #":")))
+                 (interleave (repeat "-i") (split (:ignore opts) #",")))
         conf (conf src-root)
         data-root (str src-root "/.opengrok")]
     (when ctags

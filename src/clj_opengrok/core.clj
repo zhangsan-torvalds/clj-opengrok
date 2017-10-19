@@ -16,7 +16,8 @@
    ["-t" "--type type" "search, type (c/h/java...)"]
    ["-o" "--sort order" "search, date or path :default relevance"]
    ["-q" "--quiet" "search, does not show page."]
-   ["-i" "--ignore file-ext" "index, *.o:*.class:*.zip:.svn:target"]
+   ["-I" "--pattern file-pattern" "index, -I *.java,*.cpp"]
+   ["-i" "--ignore file-ext" "index, *.o,*.class,*.zip,.svn,target,d:test/"]
    ["-s" "--src-root path" "index, source root path"]
    ["-e" "--project" "index, enable projects"]
    ["-v" "--version"]])

@@ -27,6 +27,8 @@
         project (when (:project opts) "-P")
         ignore (when (:ignore opts)
                  (interleave (repeat "-i") (split (:ignore opts) #",")))
+        pattern (when (:pattern opts)
+                 (interleave (repeat "-I") (split (:pattern opts) #",")))
         conf (conf src-root)
         data-root (str src-root "/.opengrok")]
     (when ctags
@@ -42,6 +44,7 @@
                  "-q"
                  "-D"
                  "-e"
+                 pattern
                  project
                  ignore)))
 

@@ -39,7 +39,6 @@
                  "-S"
                  "-s" src-root
                  "-d" data-root
-                 "-H"
                  "-q"
                  "-D"
                  "-e"
